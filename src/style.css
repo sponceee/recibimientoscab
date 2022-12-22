@@ -3,7 +3,8 @@
 body {
     margin: 0 auto;
     display: grid;
-    font-size: 18px;
+    font-size: 16px;
+    width: 100vw;
 }
 
 .navbar {
@@ -18,7 +19,6 @@ body {
     font-family: 'Pirata One', cursive;
     font-size: 1.5em;
     box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .reccab {
@@ -39,22 +39,25 @@ body {
 }
 
 .nav-btn:hover {
-    transition: all 0.2s;
+    transition: all 0.5s;
+    background-color: #59a5d8;
+    font-weight: 600;
     box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .video {
-    height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: cyan;
 }
-
+.video-img{
+    width: 100%;
+}
 .info {
     background-color: black;
-    height: 450px;
+    height: 80vh;
     width: 100%;
     color: white;
     font-family: 'Pirata One', cursive;
@@ -65,13 +68,11 @@ body {
 }
 
 .logo1 {
-    width: 200px;
-    height: 200px;
+    max-width: 30%;
     border-radius: 50%;
     background-color: aqua;
     margin-left: 5%;
     margin-right: 24px;
-
 }
 
 .about1 {
@@ -81,14 +82,26 @@ body {
 }
 
 .about2 {
-    background-color: violet;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 2fr));
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    background-color: #59a5d8;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    max-width: 90%;
 }
 
-.carousel-container {
-    background-color: lightblue;
+.about2-info {
+    min-width: 280px;
+    max-width: 40%;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    width: 100vh;
-    overflow-x: hidden;
+    color: black;
+}
+.telones-img {
+    min-width: 280px;
+    max-width: 90%;
+    height: auto;
 }
